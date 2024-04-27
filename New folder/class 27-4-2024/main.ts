@@ -24,22 +24,57 @@
 
 
 
-let user1: {          // Object
+// let user1: {          // Object
 
-    name: string ,
+//     name: string ,
 
-    age: number ,
+//     age: number ,
 
-    role: string ,
+//     role: string ,
 
-} = {
+// } = {
 
-    name:"ahmed",
+//     name:"ahmed",
 
-    age: 36,
+//     age: 36,
 
-    role: "father",
+//     role: "father",
 
+// };
+
+// console.log(user1);
+
+// Type Literals
+
+// ONLY Defined Given Set Data Types and Words
+
+// let Trafficlight: "Red" | "Green" | "Blue" = "Blue" ;
+
+// Type Intersection 
+
+type Student = {
+    Name : String ;
+    RollNumber : Number ;
 };
 
-console.log(user1);
+type Teacher = {
+    Name : String ;
+    Experience : Number ;
+};
+
+let Student_01 : Student = {
+    Name : "Muhammad Shayan Ahmed" ,
+    RollNumber : 57287 ,
+};
+
+let Teacher_01 : Teacher = {
+    Name : "Sir Hamzah" ,
+    Experience : 8 ,
+};
+
+let both : Teacher & Student = {
+    Name : "Bilal",
+    RollNumber : 54321 ,
+    Experience : 4 ,
+};
+
